@@ -1,0 +1,91 @@
+*{
+	
+}
+body{
+	background-color: #000;
+}
+.main{
+	height: 100vh;
+
+}
+.prt_home_wrapper{
+	position: relative;
+	background-image: url(../image/content/banner_bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y :auto;
+}
+
+/*logo*/
+.prt_logo_wrapper img{
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	-webkit-animation-name: example;
+	animation: example 2s linear infinite;
+}
+.prt_logo_wrapper a{
+	cursor: pointer;
+}
+
+@keyframes example {
+	100% {
+    transform: rotatey(360deg);
+	}
+}
+
+/*menu*/
+.prt_menu_wrapper a{
+	position: absolute;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.prt_menu_wrapper a:hover{
+	text-decoration: none;
+}
+.prt_top{
+	top: 45px;
+    left: 50%;
+    /*width: 100px;*/
+    transform: translateX(-50%);
+}
+.prt_right{
+	top: 50%;
+    right: 5%;
+    width: 100px;
+    transform: rotateZ(90deg);
+}
+.prt_bottom{
+	bottom: 45px;
+    left: 50%;
+    width: 150px;
+    transform: translateX(-50%);
+}
+.prt_left{
+	top: 50%;
+    left: 5%;
+    transform: rotateZ(270deg);
+}
+
+.prt_home_wrapper h1{
+	position: absolute;
+	top: 120px;
+	left: 60%;
+	font-size:150px;
+	color: #ffffff;
+	font-weight: bold;
+	background: url(../image/content/banner_text_bg.jpg) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: -31px 10px;
+}
